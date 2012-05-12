@@ -14,62 +14,12 @@
     <script type="application/javascript" src="js/mozhackday.js"></script>
   </head>
 
-  <body class="hidden">
-    hello, motherfuckers!
-    <!--<div id="views">-->
-      <!--<div id="stopwatch-view" class="view">-->
-        <!--<div class="chrono-view-container">-->
-          <!--<div>-->
-            <!--<div class="chrono-view" id="stopwatch-chrono-view">00:00</div>-->
-          <!--</div>-->
-          <!--<div class="ticker-view" id="stopwatch-ticker-view">-->
-          <!--</div>-->
-        <!--</div>-->
+  <body>
+    <video id="viewfinder" autoplay></video>
+    <div>
+      <button id="capture_button">Grab</button>
+    </div>
 
-        <!--<div id="reset-button" class="button-container" data-action="reset" onclick="StopWatch.execute(this.dataset.action)">-->
-          <!--<div>-->
-            <!--<span data-l10n-id="reset">Reset</span>-->
-          <!--</div>-->
-        <!--</div>-->
-
-        <!--<div id="stopwatch-action-button" class="button-container" data-action="start" onclick="StopWatch.execute(this.dataset.action)">-->
-          <!--<div>-->
-            <!--<span data-l10n-id="start">Start</span>-->
-            <!--<span data-l10n-id="stop">Stop</span>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-
-      <!--<div id="timer-view" class="view" hidden="true">-->
-        <!--<div class="chrono-view-container">-->
-          <!--<div>-->
-            <!--<div class="chrono-view" id="timer-chrono-view">00:00</div>-->
-          <!--</div>-->
-          <!--<div class="ticker-view" id="timer-ticker-view">-->
-          <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="button-container">-->
-          <!--<div>-->
-            <!--<input id="duration-field" type="text" value="02:00" required pattern="([0-9]{1,2}\:)+[0-5][0-9]" />-->
-          <!--</div>-->
-        <!--</div>-->
-
-        <!--<div id="timer-action-button" class="button-container" data-action="start" onclick="Timer.execute(this.dataset.action)">-->
-          <!--<div>-->
-            <!--<span data-l10n-id="start">Start</span>-->
-            <!--<span data-l10n-id="cancel">Cancel</span>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div id="tabs-container">-->
-      <!--<div id="tabs" onclick="choiceChanged(event.target)">-->
-        <!--<fieldset>-->
-          <!--<label id="stopwatch-label" for="stopwatch-choice" data-choice="stopwatch" data-active="true"><input id="stopwatch-choice" type="radio" name="tabs" checked="checked" /></label>-->
-          <!--<label id="timer-label" for="timer-choice" data-choice="timer"><input id="timer-choice" type="radio" name="tabs" checked="" /></label>-->
-        <!--</fieldset>-->
-      <!--</div>-->
-    <!--</div>-->
+    <canvas id="capture"></canvas>
   </body>
 </html>
