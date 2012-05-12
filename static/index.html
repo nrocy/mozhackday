@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+		  var socket = io.connect('http://localhost:1234');
+		  socket.on('connect', function () {
+		    console.log("connected");
+		  });
+		</script>
+
+	</head>
+	<body>
+		Client...
+	</body>
+</html>
