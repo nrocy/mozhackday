@@ -1,3 +1,9 @@
 
-fuck piss bum poop squirrel
+Get apache setup for gaia, or use the emulator thingy.
+https://wiki.mozilla.org/Gaia/Hacking#Hosting_Gaia_using_Apache
 
+Add hosts entry for mozhackday.gaiamobile.org
+
+Hit up: http://mozhackday.gaiamobile.org - when prompted to allow offline storage, say 'never for this site'
+
+Should see 'hello, motherfuckers!' or similar
