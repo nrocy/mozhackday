@@ -29,5 +29,5 @@ window.addEventListener('DOMContentLoaded', function CameraInit() {
   if(navigator.mozCamera) {
     viewfinder.src = navigator.mozCamera.getCameraURI(config);
   }
-});
 
+});
