@@ -24,8 +24,10 @@ socket.on("connection", function(client) {
     console.log("disconnect");
   });
 
-  client.on("message", function(msg) {
-    console.log("message");
+  client.on("send_image", function(msg) {
+    console.log("receieved");
+    client.broadcast.emit("image", msg);
+    console.log("sent");
   });
 
 });
